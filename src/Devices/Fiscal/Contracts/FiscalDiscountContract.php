@@ -2,6 +2,6 @@
 
 namespace Itsolutions\DeviceSdk\Devices\Fiscal\Contracts;
 
-interface FiscalOrderContract extends FiscalDataContract
+interface FiscalDiscountContract extends FiscalDataContract
 {
 }

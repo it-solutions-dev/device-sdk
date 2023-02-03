@@ -3,9 +3,9 @@
 namespace Itsolutions\DeviceSdk\Devices\Fiscal\DataTransfer;
 
 use Illuminate\Support\Arr;
-use Itsolutions\DeviceSdk\Devices\Contracts\FiscalDataContract;
+use Itsolutions\DeviceSdk\Devices\Fiscal\Contracts\FiscalReprintContract;
 
-class FiscalReceiptReprint implements FiscalDataContract
+class FiscalReceiptReprint implements FiscalReprintContract
 {
     public function __construct(
         public string $receiptNumber,

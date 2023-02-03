@@ -4,7 +4,6 @@ namespace Itsolutions\DeviceSdk\Devices\Fiscal\Contracts;
 
 use Illuminate\Contracts\Support\Arrayable;
 
-interface FiscalDataContract extends Arrayable
+interface FiscalErrorContract extends Arrayable
 {
-    public static function fill(array $data): self;
 }

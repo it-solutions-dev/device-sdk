@@ -3,7 +3,7 @@
 namespace Itsolutions\DeviceSdk\Devices\Fiscal\DataTransfer;
 
 use Illuminate\Support\Arr;
-use Itsolutions\DeviceSdk\Devices\Contracts\FiscalOrderContract;
+use Itsolutions\DeviceSdk\Devices\Fiscal\Contracts\FiscalOrderContract;
 use Itsolutions\DeviceSdk\Devices\Fiscal\DataTransfer\FiscalDiscountData;
 use Itsolutions\DeviceSdk\Devices\Fiscal\DataTransfer\FiscalPaymentData;
 use Itsolutions\DeviceSdk\Devices\Fiscal\DataTransfer\FiscalProductData;

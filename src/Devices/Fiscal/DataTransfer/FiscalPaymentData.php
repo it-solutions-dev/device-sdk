@@ -3,7 +3,7 @@
 namespace Itsolutions\DeviceSdk\Devices\Fiscal\DataTransfer;
 
 use Illuminate\Support\Arr;
-use Itsolutions\DeviceSdk\Devices\Contracts\FiscalDataContract;
+use Itsolutions\DeviceSdk\Devices\Fiscal\Contracts\FiscalDataContract;
 
 class FiscalPaymentData implements FiscalDataContract
 {
