@@ -10,7 +10,7 @@ class FiscalProductData implements FiscalDataContract
 {
     public function __construct(
         public string $text,
-        public int $quantity,
+        public float $quantity,
         public float $price,
         public int $vat,
         public ?FiscalDiscountData $discount = null,
