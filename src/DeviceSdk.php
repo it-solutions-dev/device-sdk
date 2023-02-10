@@ -1,6 +1,6 @@
 <?php
 
-namespace Itsolutions\DeviceSdk;
+namespace Its\DeviceSdk;
 
 class DeviceSdk
 {

@@ -1,12 +1,9 @@
 <?php
 
-namespace Itsolutions\DeviceSdk;
+namespace Its\DeviceSdk;
 
 use Illuminate\Support\Facades\Facade;
 
-/**
- * @see \Itsolutions\DeviceSdk\Skeleton\SkeletonClass
- */
 class DeviceSdkFacade extends Facade
 {
     /**

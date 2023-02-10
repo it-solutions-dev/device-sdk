@@ -1,6 +1,6 @@
 <?php
 
-namespace ItsSolutions\DeviceSdk\Enums\Traits;
+namespace Its\DeviceSdk\Enums\Traits;
 
 trait ToArray
 {

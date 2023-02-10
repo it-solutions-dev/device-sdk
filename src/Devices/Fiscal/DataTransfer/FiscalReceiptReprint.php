@@ -1,9 +1,9 @@
 <?php
 
-namespace Itsolutions\DeviceSdk\Devices\Fiscal\DataTransfer;
+namespace Its\DeviceSdk\Devices\Fiscal\DataTransfer;
 
 use Illuminate\Support\Arr;
-use Itsolutions\DeviceSdk\Devices\Fiscal\Contracts\FiscalReprintContract;
+use Its\DeviceSdk\Devices\Fiscal\Contracts\FiscalReprintContract;
 
 class FiscalReceiptReprint implements FiscalReprintContract
 {

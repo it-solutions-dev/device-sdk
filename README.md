@@ -7,7 +7,7 @@ DTO package for devices data. To make sure that communication data is consistent
 You can install the package via composer:
 
 ```bash
-composer require itsolutions/device-sdk
+composer require its/device-sdk
 ```
 
 ## Usage

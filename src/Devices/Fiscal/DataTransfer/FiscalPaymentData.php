@@ -1,16 +1,16 @@
 <?php
 
-namespace Itsolutions\DeviceSdk\Devices\Fiscal\DataTransfer;
+namespace Its\DeviceSdk\Devices\Fiscal\DataTransfer;
 
 use Illuminate\Support\Arr;
-use Itsolutions\DeviceSdk\Devices\Fiscal\Contracts\FiscalDataContract;
+use Its\DeviceSdk\Devices\Fiscal\Contracts\FiscalDataContract;
 
 class FiscalPaymentData implements FiscalDataContract
 {
     public function __construct(
         public string $text,
         public float $amount,
-        public int $option
+        public ?int $option = null,
     ) {
     }
 
@@ -19,7 +19,7 @@ class FiscalPaymentData implements FiscalDataContract
         return new static(
             text: Arr::get($data, 'text', ''),
             amount: Arr::get($data, 'amount', 0),
-            option: Arr::get($data, 'option', 0),
+            option: Arr::get($data, 'option'),
         );
     }
 

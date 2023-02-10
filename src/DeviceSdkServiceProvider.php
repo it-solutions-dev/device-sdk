@@ -1,6 +1,6 @@
 <?php
 
-namespace Itsolutions\DeviceSdk;
+namespace Its\DeviceSdk;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -21,7 +21,7 @@ class DeviceSdkServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('device-sdk.php'),
+                __DIR__ . '/../config/config.php' => config_path('device-sdk.php'),
             ], 'config');
 
             // Publishing the views.
@@ -50,7 +50,7 @@ class DeviceSdkServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'device-sdk');
+        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'device-sdk');
 
         // Register the main class to use with the facade
         $this->app->singleton('device-sdk', function () {

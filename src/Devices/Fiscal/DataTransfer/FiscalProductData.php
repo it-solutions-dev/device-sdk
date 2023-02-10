@@ -1,10 +1,10 @@
 <?php
 
-namespace Itsolutions\DeviceSdk\Devices\Fiscal\DataTransfer;
+namespace Its\DeviceSdk\Devices\Fiscal\DataTransfer;
 
 use Illuminate\Support\Arr;
-use Itsolutions\DeviceSdk\Devices\Fiscal\Contracts\FiscalDataContract;
-use Itsolutions\DeviceSdk\Devices\Fiscal\DataTransfer\FiscalDiscountData;
+use Its\DeviceSdk\Devices\Fiscal\Contracts\FiscalDataContract;
+use Its\DeviceSdk\Devices\Fiscal\DataTransfer\FiscalDiscountData;
 
 class FiscalProductData implements FiscalDataContract
 {
@@ -12,8 +12,9 @@ class FiscalProductData implements FiscalDataContract
         public string $text,
         public int $quantity,
         public float $price,
-        public int $option,
-        public FiscalDiscountData $discount,
+        public int $vat,
+        public ?FiscalDiscountData $discount = null,
+        public ?int $option = null
     ) {
     }
 
@@ -23,8 +24,9 @@ class FiscalProductData implements FiscalDataContract
             text: Arr::get($data, 'text', ''),
             quantity: Arr::get($data, 'quantity', 0),
             price: Arr::get($data, 'price', 0),
-            option: Arr::get($data, 'option', 0),
-            discount: FiscalDiscountData::fill(Arr::get($data, 'discount', [])),
+            vat: Arr::get($data, 'vat', 0),
+            discount: Arr::get($data, 'discount') ? FiscalDiscountData::fill(Arr::get($data, 'discount')) : null,
+            option: Arr::get($data, 'option'),
         );
     }
 
@@ -34,8 +36,9 @@ class FiscalProductData implements FiscalDataContract
             'text' => $this->text,
             'quantity' => $this->quantity,
             'price' => $this->price,
+            'vat' => $this->vat,
+            'discount' => $this->discount?->toArray(),
             'option' => $this->option,
-            'discount' => $this->discount->toArray(),
         ];
     }
 }

@@ -1,11 +1,10 @@
 {
-    "name": "itsolutions/device-sdk",
+    "name": "its/device-sdk",
     "description": "Devices SDK",
     "keywords": [
-        "itsolutions",
+        "its",
         "device-sdk"
     ],
-    "homepage": "https://github.com/itsolutions/device-sdk",
     "license": "The Unlicense",
     "type": "library",
     "authors": [
@@ -25,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Itsolutions\\DeviceSdk\\": "src"
+            "Its\\DeviceSdk\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Itsolutions\\DeviceSdk\\Tests\\": "tests"
+            "Its\\DeviceSdk\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -43,10 +42,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Itsolutions\\DeviceSdk\\DeviceSdkServiceProvider"
+                "Its\\DeviceSdk\\DeviceSdkServiceProvider"
             ],
             "aliases": {
-                "DeviceSdk": "Itsolutions\\DeviceSdk\\DeviceSdkFacade"
+                "DeviceSdk": "Its\\DeviceSdk\\DeviceSdkFacade"
             }
         }
     }

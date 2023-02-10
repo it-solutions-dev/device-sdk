@@ -1,10 +1,10 @@
 <?php
 
-namespace ItsSolutions\DeviceSdk\Enums;
+namespace Its\DeviceSdk\Enums;
 
-use ItsSolutions\DeviceSdk\Enums\Traits\ToArray;
+use Its\DeviceSdk\Enums\Traits\ToArray;
 
-enum DeviceActionEnum: string
+enum DeviceActionTypeEnum: string
 {
     use ToArray;
 
