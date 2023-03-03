@@ -45,6 +45,7 @@ class FiscalOrderData implements FiscalOrderContract
             'cash' => $this->cash?->toArray(),
             'card' => $this->card?->toArray(),
             'coupon' => $this->coupon?->toArray(),
+            'transaction' => $this->transaction?->toArray(),
             'points' => $this->points?->toArray(),
         ];
     }
