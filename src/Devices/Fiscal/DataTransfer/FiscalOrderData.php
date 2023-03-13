@@ -19,6 +19,7 @@ class FiscalOrderData implements FiscalOrderContract
         public ?FiscalPaymentData $coupon = null,
         public ?FiscalPaymentData $transaction = null,
         public ?FiscalPaymentData $points = null,
+        public ?array $custom = null,
     ) {
     }
 
@@ -33,6 +34,7 @@ class FiscalOrderData implements FiscalOrderContract
             coupon: Arr::get($data, 'coupon') ? FiscalPaymentData::fill(Arr::get($data, 'coupon')) : null,
             transaction: Arr::get($data, 'transaction') ? FiscalPaymentData::fill(Arr::get($data, 'transaction')) : null,
             points: Arr::get($data, 'points') ? FiscalPaymentData::fill(Arr::get($data, 'points')) : null,
+            custom: Arr::get($data, 'custom', null),
         );
     }
 
@@ -47,6 +49,7 @@ class FiscalOrderData implements FiscalOrderContract
             'coupon' => $this->coupon?->toArray(),
             'transaction' => $this->transaction?->toArray(),
             'points' => $this->points?->toArray(),
+            'custom' => $this->custom,
         ];
     }
 }
