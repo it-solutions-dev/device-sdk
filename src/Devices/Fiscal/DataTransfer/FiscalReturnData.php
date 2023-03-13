@@ -30,7 +30,7 @@ class FiscalReturnData implements FiscalReturnContract
             card: Arr::get($data, 'card') ? FiscalPaymentData::fill(Arr::get($data, 'card')) : null,
             coupon: Arr::get($data, 'coupon') ? FiscalPaymentData::fill(Arr::get($data, 'coupon')) : null,
             transaction: Arr::get($data, 'transaction') ? FiscalPaymentData::fill(Arr::get($data, 'transaction')) : null,
-            custom: Arr::get($data, 'cusstom', null),
+            custom: Arr::get($data, 'custom', null),
         );
     }
 
