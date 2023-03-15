@@ -8,6 +8,16 @@ use Its\DeviceSdk\Devices\Fiscal\DataTransfer\FiscalDiscountData;
 
 class FiscalProductData implements FiscalDataContract
 {
+    /**
+     * 
+     * @param string $text 
+     * @param float $quantity 
+     * @param float $price 
+     * @param int $vat 
+     * @param null|FiscalDiscountData $discount 
+     * @param null|int $option - custom fiscal numerator without VAT
+     * @return void 
+     */
     public function __construct(
         public string $text,
         public float $quantity,

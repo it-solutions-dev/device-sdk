@@ -7,6 +7,14 @@ use Its\DeviceSdk\Devices\Fiscal\Contracts\FiscalDataContract;
 
 class FiscalPaymentData implements FiscalDataContract
 {
+    /**
+     * 
+     * @param string $text 
+     * @param float $amount 
+     * @param null|int $option  - not implemented in SA97 (should allow set extra fiscal numerator)
+     * @return void 
+     */
+
     public function __construct(
         public string $text,
         public float $amount,
