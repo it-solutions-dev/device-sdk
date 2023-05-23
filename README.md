@@ -10,12 +10,6 @@ You can install the package via composer:
 composer require its/device-sdk
 ```
 
-## Usage
-
-```php
-// Usage description here
-```
-
 ### Testing
 
 ```bash
