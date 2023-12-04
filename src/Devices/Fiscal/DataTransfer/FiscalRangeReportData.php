@@ -11,13 +11,15 @@ class FiscalRangeReportData extends FiscalDataContract
     /**
      * 
      * @param int $from - z number from
-     * @param string $to - z number to 
+     * @param int $to - z number to 
+     * @param int $mode - 0 - sum, 1 - detailed
      * @return void 
      */
 
     public function __construct(
         public int $from,
         public int $to,
+        public int $mode = 0
     ) {
     }
 
@@ -26,6 +28,7 @@ class FiscalRangeReportData extends FiscalDataContract
         return new static(
             from: Arr::get($data, 'from'),
             to: Arr::get($data, 'to'),
+            mode: Arr::get($data, 'mode', 0),
         );
     }
 
@@ -33,7 +36,8 @@ class FiscalRangeReportData extends FiscalDataContract
     {
         return [
             'from' => $this->from,
-            'to' => $this->to
+            'to' => $this->to,
+            'mode' => $this->mode
         ];
     }
 }
