@@ -20,6 +20,8 @@ enum DeviceActionTypeEnum: string
     case FiscalReportX = 'fiscal_report_x';
     case FiscalReportZ = 'fiscal_report_z';
     case FiscalCancel = 'fiscal_cancel';
+    case FiscalDateReport = 'fiscal_date_report';
+    case FiscalRangeReport = 'fiscal_range_report';
     case FiscalReprintReceipt = 'fiscal_reprint_receipt';
 
     case ScannerScan = 'scanner_scan';
