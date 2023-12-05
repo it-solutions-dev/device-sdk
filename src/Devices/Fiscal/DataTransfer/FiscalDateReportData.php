@@ -6,7 +6,7 @@ use Illuminate\Support\Arr;
 use Its\DeviceSdk\Devices\Fiscal\Contracts\FiscalDataContract;
 
 
-class FiscalDateReportData extends FiscalDataContract
+class FiscalDateReportData implements FiscalDataContract
 {
     /**
      * Date formatted based on device regional settings

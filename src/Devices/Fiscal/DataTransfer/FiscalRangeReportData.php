@@ -6,7 +6,7 @@ use Illuminate\Support\Arr;
 use Its\DeviceSdk\Devices\Fiscal\Contracts\FiscalDataContract;
 
 
-class FiscalRangeReportData extends FiscalDataContract
+class FiscalRangeReportData implements FiscalDataContract
 {
     /**
      * 
