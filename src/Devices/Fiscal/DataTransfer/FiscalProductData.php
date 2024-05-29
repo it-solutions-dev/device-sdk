@@ -13,7 +13,7 @@ class FiscalProductData implements FiscalDataContract
      * @param string $text 
      * @param float $quantity 
      * @param float $price 
-     * @param int $vat 
+     * @param float $vat 
      * @param null|FiscalDiscountData $discount 
      * @param null|int $option - custom fiscal numerator without VAT
      * @return void 
@@ -22,7 +22,7 @@ class FiscalProductData implements FiscalDataContract
         public string $text,
         public float $quantity,
         public float $price,
-        public int $vat,
+        public float $vat,
         public ?FiscalDiscountData $discount = null,
         public ?int $option = null
     ) {
