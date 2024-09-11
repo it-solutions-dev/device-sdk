@@ -25,4 +25,6 @@ enum DeviceActionTypeEnum: string
     case FiscalReprintReceipt = 'fiscal_reprint_receipt';
 
     case ScannerScan = 'scanner_scan';
+
+    case CardPayment = 'card_payment';
 }
