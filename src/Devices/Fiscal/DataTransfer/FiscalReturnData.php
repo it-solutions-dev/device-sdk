@@ -18,6 +18,7 @@ class FiscalReturnData implements FiscalReturnContract
         public ?FiscalPaymentData $transaction = null,
         public ?array $custom = null,
         public ?float $totalAfterRouding = null,
+        public ?bool $rounddbl = false,
     ) {}
 
     public static function fill(array $data): self
@@ -32,6 +33,7 @@ class FiscalReturnData implements FiscalReturnContract
             transaction: Arr::get($data, 'transaction') ? FiscalPaymentData::fill(Arr::get($data, 'transaction')) : null,
             custom: Arr::get($data, 'custom', null),
             totalAfterRouding: Arr::get($data, 'total_after_rouding', null),
+            rounddbl: Arr::get($data, 'rounddbl', false),
         );
     }
 
@@ -46,6 +48,7 @@ class FiscalReturnData implements FiscalReturnContract
             'transaction' => $this->transaction?->toArray(),
             'custom' => $this->custom,
             'total_after_rouding' => $this->totalAfterRouding,
+            'rounddbl' => $this->rounddbl,
         ];
     }
 }

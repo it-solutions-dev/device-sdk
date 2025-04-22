@@ -21,6 +21,7 @@ class FiscalOrderData implements FiscalOrderContract
         public ?FiscalPaymentData $points = null,
         public ?array $custom = null,
         public ?float $totalAfterRouding = null,
+        public ?bool $rounddbl = false
     ) {}
 
     public static function fill(array $data): self
@@ -36,6 +37,7 @@ class FiscalOrderData implements FiscalOrderContract
             points: Arr::get($data, 'points') ? FiscalPaymentData::fill(Arr::get($data, 'points')) : null,
             custom: Arr::get($data, 'custom', null),
             totalAfterRouding: Arr::get($data, 'total_after_rouding', null),
+            rounddbl: Arr::get($data, 'rounddbl', false),
         );
     }
 
@@ -52,6 +54,7 @@ class FiscalOrderData implements FiscalOrderContract
             'points' => $this->points?->toArray(),
             'custom' => $this->custom,
             'total_after_rouding' => $this->totalAfterRouding,
+            'rounddbl' => $this->rounddbl,
         ];
     }
 }
