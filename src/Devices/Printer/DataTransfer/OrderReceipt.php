@@ -12,7 +12,8 @@ class OrderReceipt extends Data
         public string $datatime, // Y-m-d H:i:s
         public string $timezone = 'UTC',
         public string $receiptNumber,
-        public string $companyDetails,
+        #[DataCollectionOf(PrintLine::class)]
+        public array $companyDetails,
         #[DataCollectionOf(OrderReceiptItem::class)]
         public array $items,
         public float $total = 0,
