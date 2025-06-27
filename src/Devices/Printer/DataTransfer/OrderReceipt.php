@@ -2,7 +2,6 @@
 
 namespace Its\DeviceSdk\Devices\Printer\DataTransfer;
 
-use Illuminate\Support\Collection;
 use Spatie\LaravelData\Attributes\DataCollectionOf;
 use Spatie\LaravelData\Data;
 
