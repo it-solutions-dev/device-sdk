@@ -1,6 +1,6 @@
 <?php
 
-namespace Devices\Printer\DataTransfer;
+namespace Its\DeviceSdk\Devices\Printer\DataTransfer;
 
 use Spatie\LaravelData\Attributes\DataCollectionOf;
 use Spatie\LaravelData\Data;
