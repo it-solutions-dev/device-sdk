@@ -2,7 +2,9 @@
 
 namespace Its\DeviceSdk\Devices\Printer\DataTransfer;
 
-class OrderReceiptVat
+use Spatie\LaravelData\Data;
+
+class OrderReceiptVat extends Data
 {
     public function __construct(
         public string $text,
