@@ -16,9 +16,9 @@ class OrderReceipt extends Data
         #[DataCollectionOf(PrintLine::class)]
         public array $companyDetails,
         #[DataCollectionOf(OrderReceiptItem::class)]
-        public Collection $items,
+        public array $items,
         #[DataCollectionOf(OrderReceiptVat::class)]
-        public Collection $vats,
+        public array $vats,
         public float $total = 0,
         public ?float $totalAfterRounding = 0,
         public ?bool $rounddbl = false,
