@@ -1,0 +1,13 @@
+<?php
+
+namespace Its\DeviceSdk\Devices\Printer\DataTransfer\Collections;
+
+use Illuminate\Support\Collection;
+
+/**
+ * @template TKey of array-key
+ * @template TData of \Its\DeviceSdk\Devices\Printer\DataTransfer\PrintLine
+ *
+ * @extends \Illuminate\Support\Collection<TKey, TData>
+ */
+class PrintLineCollection extends Collection {}
