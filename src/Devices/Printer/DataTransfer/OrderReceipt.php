@@ -3,7 +3,6 @@
 namespace Its\DeviceSdk\Devices\Printer\DataTransfer;
 
 use Illuminate\Support\Collection;
-use Its\DeviceSdk\Devices\Printer\DataTransfer\Collections\PrintLineCollection;
 use Spatie\LaravelData\Attributes\DataCollectionOf;
 use Spatie\LaravelData\Data;
 
@@ -14,7 +13,8 @@ class OrderReceipt extends Data
         public string $receiptNumber,
         public string $datatime, // Y-m-d H:i:s
         public string $timezone,
-        public PrintLineCollection $companyDetails,
+        #[DataCollectionOf(PrintLine::class)]
+        public array $companyDetails,
         #[DataCollectionOf(OrderReceiptItem::class)]
         public Collection $items,
         #[DataCollectionOf(OrderReceiptVat::class)]
