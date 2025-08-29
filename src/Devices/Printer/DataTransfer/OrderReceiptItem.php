@@ -13,6 +13,6 @@ class OrderReceiptItem extends Data
         public float $vat,
         public float $total,
         public ?string $vatLetter = null,
-        public ?float $discount = null,
+        public ?OrderReceiptItemDiscount $discount = null,
     ) {}
 }
