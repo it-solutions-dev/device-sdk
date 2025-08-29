@@ -19,7 +19,10 @@ class OrderReceipt extends Data
         #[DataCollectionOf(OrderReceiptVat::class)]
         public array $vats,
         public float $total = 0,
-        public ?float $totalAfterRounding = 0,
+        public ?float $receiptDiscount = 0,
+        public ?float $totalDiscount = 0, // receipt items discounts + receiptDiscount
+        public ?float $totalBeforeRounding = 0,
+        public ?float $totalRounded = 0,
         public ?bool $rounddbl = false,
         public ?OrderReceiptPayment $cash = null,
         public ?OrderReceiptPayment $card = null,
