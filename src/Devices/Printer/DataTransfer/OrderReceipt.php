@@ -10,7 +10,7 @@ class OrderReceipt extends Data
     public function __construct(
         public string $device,
         public string $receiptNumber,
-        public string $datatime, // Y-m-d H:i:s
+        public string $datetime, // Y-m-d H:i:s
         public string $timezone,
         #[DataCollectionOf(PrintLine::class)]
         public array $companyDetails,
