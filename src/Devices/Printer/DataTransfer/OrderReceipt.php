@@ -25,6 +25,7 @@ class OrderReceipt extends Data
         public ?float $totalBeforeRounding = 0,
         public ?float $totalRounded = 0,
         public ?bool $rounddbl = false,
+        public ?string $qrData = null,
         public ?OrderReceiptPayment $cash = null,
         public ?OrderReceiptPayment $card = null,
         public ?OrderReceiptPayment $coupon = null,
