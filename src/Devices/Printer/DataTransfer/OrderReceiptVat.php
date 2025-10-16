@@ -8,6 +8,7 @@ class OrderReceiptVat extends Data
 {
     public function __construct(
         public string $text,
+        public float $vat,
         public float $totalWithoutVat,
         public float $vatAmount,
         public float $totalWithVat,
