@@ -27,4 +27,6 @@ enum DeviceActionTypeEnum: string
     case ScannerScan = 'scanner_scan';
 
     case CardPayment = 'card_payment';
+    case Shutdown = 'shutdown';
+    case Restart = 'restart';
 }
