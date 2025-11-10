@@ -26,6 +26,7 @@ enum DeviceActionTypeEnum: string
 
     case ScannerScan = 'scanner_scan';
 
+    case PrinterOpenCashDrawer = 'printer_open_cash_drawer';
     case CardPayment = 'card_payment';
     case Shutdown = 'shutdown';
     case Restart = 'restart';
