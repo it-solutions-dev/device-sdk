@@ -5,7 +5,7 @@ namespace Its\DeviceSdk\Enums;
 enum DeviceTypeEnum: string
 {
     case Pos = 'pos';
-    case Kiosk = 'kiosk';
+    case Kiosk = 'self-service-kiosk';
     case Printer = 'printer';
     case Scanner = 'scanner';
     case Fiscal = 'fiscal';
