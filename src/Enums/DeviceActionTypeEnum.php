@@ -23,11 +23,10 @@ enum DeviceActionTypeEnum: string
     case FiscalDateReport = 'fiscal_date_report';
     case FiscalRangeReport = 'fiscal_range_report';
     case FiscalReprintReceipt = 'fiscal_reprint_receipt';
-
     case ScannerScan = 'scanner_scan';
-
     case PrinterOpenCashDrawer = 'printer_open_cash_drawer';
     case CardPayment = 'card_payment';
     case Shutdown = 'shutdown';
     case Restart = 'restart';
+    case SendLogs = 'send_logs';
 }
