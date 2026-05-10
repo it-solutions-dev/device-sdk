@@ -30,4 +30,5 @@ enum DeviceActionTypeEnum: string
     case Restart = 'restart';
     case SendLogs = 'send_logs';
     case ClearLogs = 'clear_logs';
+    case RebootServices = 'reboot_services';
 }
